@@ -1,8 +1,8 @@
-package practice;
+package practices;
 
 public class ShoppingCart {
     
     public static void main(String[] args) {
-        System.out.println("Shopping cart main method");
+        System.out.println("Welcome to the Shopping cart");
     }
 }
