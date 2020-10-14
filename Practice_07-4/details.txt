@@ -1,0 +1,4 @@
+1. Create a method that allows to search for a particula player in a team.
+    Search criteria can be part of the last name. This substring can be in any position of the last name
+2. Print team's player's name: lastname, firstname
+    
