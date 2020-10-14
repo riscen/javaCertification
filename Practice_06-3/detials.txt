@@ -1,0 +1,29 @@
+In this practice, you are asked to begin writing an application that will track statistics in a soccer league. 
+You are told what basics objects must be modeled, but must figure out the implementation details yourself.
+See activity guide
+
+Classes:
+    Player class: Each player has a name
+    Team class: Each team has a name. A team also contains a roster of its players
+    Goal class: The application must keep track of goals scored. A goal can be described by the team who scored it, the player who scored it, and the time it was scored it (Represent time as a double)
+    Game class: The application must keep track of games played. A game can be described by its home team, its away team, and each goal that may have been scored.
+    League class: This class contains a single main method. The main method simulates the league by instantiating objects and assigning values.
+    
+
+Teams with at least 6 players
+Game with atleast 3 goals
+Print team players
+Print scored goals
+
+League
+    Initiate team1
+    Initiate team2
+    Print teams
+    Initiate game
+        Used module of 3
+            If mod is 0, no goals scored
+            If mod is 1, team1 scored (get random player)
+            If mod is 2, team2 scored (get random player
+    Print game info
+    Print goals
+    
