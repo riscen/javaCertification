@@ -1,0 +1,5 @@
+1. Create utility package*
+2. Create method which returns an array of teams, with no params*
+3. Create method to create a game, as param send an array of teams
+4. Write playGame method in Game class. This method accepts a number of maximum number of goals scored in a game
+5. Overload playGame method, to no accept arguments and have a default of 6 goals
