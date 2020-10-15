@@ -1,0 +1,44 @@
+Create MVN project
+1. Run: 
+    Administrator:~/environment/javaCertification/Practice_09-2 (main) $ mvn archetype:generate -DgroupId=com.example -DartifactId=09-02-Hello -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+2. Edit pom.xml. Add properties setting to the file before dependencies section.
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+3. After dependencies add:
+    <build>
+        <plugins>
+            <!-- Your plugins go here -->
+        </plugins>
+    </build>
+4. Add the configurattion for the compiler in plug in section:
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+     </plugin>
+5. Add exec plugin:
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.4.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.example.App</mainClass>
+        </configuration>
+    </plugin>
+6. mvn clean compile
+7. mvn exec:java
+8. mvn package
+9. java -jar target/09-02-Hello-1.0-SNAPSHOT.jar
