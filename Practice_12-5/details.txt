@@ -1,0 +1,2 @@
+1. Encapsulate your classes
+2. League should be able to acommodate any number of games, not just one
